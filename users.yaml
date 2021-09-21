@@ -1,0 +1,12 @@
+- name: R10
+  id: 10
+  vlans:
+    10: Users
+    20: Voice
+    30: Mgmt
+- name: R20
+  id: 20
+  vlans:
+    10: Users
+    20: Voice
+    30: Mgmt

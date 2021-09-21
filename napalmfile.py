@@ -19,20 +19,20 @@ def main():
 
 
 
+'''
+        config = 'hostname R50'
 
-        #config = 'hostname R50'
-
-        #device.load_merge_candidate(config=config)
-        #print('\nDiff:')
-        #print(device.compare_config())
-        #choice = input("\nCommit? [yN]: ")
-        #if choice == 'y':
-            #print('Commiting')
-            #device.commit_config()
-        #else:
-            #print('Discarding ...')
-            #device.discard_config()
-
+        device.load_merge_candidate(config=config)
+        print('\nDiff:')
+        print(device.compare_config())
+        choice = input("\nCommit? [yN]: ")
+        if choice == 'y':
+            print('Commiting')
+            device.commit_config()
+        else:
+            print('Discarding ...')
+            device.discard_config()
+'''
 
 
 if __name__ == '__main__':
