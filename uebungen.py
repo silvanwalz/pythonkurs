@@ -1,4 +1,9 @@
 #martin.stypinski@ost.ch
+mylist = {'error': 'INTERFACE_DOWN', 'host': 'syslogrouter3', 'ip': '10.18.10.25', 'timestamp': 1632830345, 'yang_message': {'interfaces': {'interface': {'GigabitEthernet2': {'state': {'admin_status': 'DOWN'}}}}}, 'message_details': {'messageId': '146', 'host': 'syslogrouter3', 'date': 'Sep 28', 'time': '11:59:05', 'milliseconds': '519', 'timeZone': None, 'tag': 'LINK-5-CHANGED', 'pri': '189', 'message': 'Interface GigabitEthernet2, changed state to administratively down', 'facility': 23, 'severity': 5}, 'yang_model': 'openconfig-interfaces', 'os': 'ios', 'facility': 23, 'severity': 5}
+
+for key in mylist['yang_message']['interfaces']['interface']:
+    print(key)
+
 '''
 ############## Übung 8 ####################
 from jinja2 import Environment, FileSystemLoader

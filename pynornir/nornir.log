@@ -1,0 +1,118 @@
+2021-09-28 10:48:42,964 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2021-09-28 10:48:42,971 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\pynornir\init.py", line 5, in hello_world
+    return Result(host=task.host, result=f"{task.host.name} existiert!")
+NameError: name 'Result' is not defined
+
+2021-09-28 10:48:42,972 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\pynornir\init.py", line 5, in hello_world
+    return Result(host=task.host, result=f"{task.host.name} existiert!")
+NameError: name 'Result' is not defined
+
+2021-09-28 10:48:42,973 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\pynornir\init.py", line 5, in hello_world
+    return Result(host=task.host, result=f"{task.host.name} existiert!")
+NameError: name 'Result' is not defined
+
+2021-09-28 10:49:58,234 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2021-09-28 10:49:58,247 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\pynornir\init.py", line 5, in hello_world
+    return Result(host=task.host, result=f"{task.hosts.hostname} existiert!")
+NameError: name 'Result' is not defined
+
+2021-09-28 10:49:58,248 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\pynornir\init.py", line 5, in hello_world
+    return Result(host=task.host, result=f"{task.hosts.hostname} existiert!")
+NameError: name 'Result' is not defined
+
+2021-09-28 10:49:58,250 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\pynornir\init.py", line 5, in hello_world
+    return Result(host=task.host, result=f"{task.hosts.hostname} existiert!")
+NameError: name 'Result' is not defined
+
+2021-09-28 10:53:22,261 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2021-09-28 10:53:22,268 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\pynornir\init.py", line 6, in hello_world
+    return Result(host=task.host, result=f"{task.host.host} existiert!")
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\inventory.py", line 368, in __getattribute__
+    return object.__getattribute__(self, name)
+AttributeError: 'Host' object has no attribute 'host'
+
+2021-09-28 10:53:22,269 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\pynornir\init.py", line 6, in hello_world
+    return Result(host=task.host, result=f"{task.host.host} existiert!")
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\inventory.py", line 368, in __getattribute__
+    return object.__getattribute__(self, name)
+AttributeError: 'Host' object has no attribute 'host'
+
+2021-09-28 10:53:22,270 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\pynornir\init.py", line 6, in hello_world
+    return Result(host=task.host, result=f"{task.host.host} existiert!")
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\inventory.py", line 368, in __getattribute__
+    return object.__getattribute__(self, name)
+AttributeError: 'Host' object has no attribute 'host'
+
+2021-09-28 10:53:44,219 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2021-09-28 10:55:43,439 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2021-09-28 11:03:27,379 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
+2021-09-28 11:04:21,535 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces.mac_address'} on 3 hosts
+2021-09-28 11:04:22,116 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interfaces.mac_address'
+
+2021-09-28 11:04:22,128 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interfaces.mac_address'
+
+2021-09-28 11:04:22,279 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\silva\pythonkurs\venv\lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interfaces.mac_address'
+
+2021-09-28 11:09:50,309 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
+2021-09-28 11:12:31,180 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
+2021-09-28 11:12:36,907 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
+2021-09-28 11:12:52,452 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
+2021-09-28 11:13:12,800 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
+2021-09-28 11:13:23,264 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
+2021-09-28 11:14:40,648 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
+2021-09-28 11:28:22,220 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
+2021-09-28 11:48:48,624 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip ospf neighbor'} on 3 hosts
