@@ -13,7 +13,7 @@ def noshutport(hostname, interface):
     net_connect.enable()
     if net_connect.check_enable_mode():
         cfg_command = ['conf t', f'interface {interface}', 'no shut', 'end']
-        #output = net_connect.send_config_set(cfg_command)
+        output = net_connect.send_config_set(cfg_command)
     net_connect.disconnect()
 
 def socket_messages():

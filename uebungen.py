@@ -1,9 +1,33 @@
 #martin.stypinski@ost.ch
+'''import pymsteams
+
+myTeamsMessage = pymsteams.connectorcard('https://ostch.webhook.office.com/webhookb2/c09cc1bb-a21a-4caa-a01b-c792f29928c2@a6e70fa3-1c7a-4aa2-a25e-836eea52ca22/IncomingWebhook/2ba831a5910347338b6bcd6216b25f68/d204fac7-dcfc-4364-a02a-a33b2234b7e3')
+
+myTeamsMessage.text('This is from Silvan!')
+myTeamsMessage.send()'''
+
+import requests
+
+start = input('Please enter start:')
+end = input('Please enter end:')
+maxtransfer = int(input('Please enter max transfers:'))
+
+response = requests.get(f'http://transport.opendata.ch/v1/connections?from={start}&to={end}')
+#response = requests.get('http://transport.opendata.ch/v1/connections?from=Rapperswil&to=Winterthur')
+
+for i in range(3):
+    if response.json()['connections'][i]['transfers'] <= maxtransfer:
+        print('---------------------------------------')
+        print(f"departure time: {response.json()['connections'][i]['from']['departure']}")
+        print(f"arrival time:   {response.json()['connections'][i]['to']['arrival']}")
+        print(f"duration:       {response.json()['connections'][i]['duration']}")
+
+'''
 mylist = {'error': 'INTERFACE_DOWN', 'host': 'syslogrouter3', 'ip': '10.18.10.25', 'timestamp': 1632830345, 'yang_message': {'interfaces': {'interface': {'GigabitEthernet2': {'state': {'admin_status': 'DOWN'}}}}}, 'message_details': {'messageId': '146', 'host': 'syslogrouter3', 'date': 'Sep 28', 'time': '11:59:05', 'milliseconds': '519', 'timeZone': None, 'tag': 'LINK-5-CHANGED', 'pri': '189', 'message': 'Interface GigabitEthernet2, changed state to administratively down', 'facility': 23, 'severity': 5}, 'yang_model': 'openconfig-interfaces', 'os': 'ios', 'facility': 23, 'severity': 5}
 
 for key in mylist['yang_message']['interfaces']['interface']:
     print(key)
-
+'''
 '''
 ############## Übung 8 ####################
 from jinja2 import Environment, FileSystemLoader
