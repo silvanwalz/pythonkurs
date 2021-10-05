@@ -1,0 +1,5 @@
+2021-10-05 15:17:47,439 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'users'} on 3 hosts
+2021-10-05 15:19:31,633 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'users'} on 3 hosts
+2021-10-05 15:19:56,951 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'users'} on 3 hosts
+2021-10-05 16:11:24,825 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
+2021-10-05 16:11:56,820 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'interfaces'} on 3 hosts
